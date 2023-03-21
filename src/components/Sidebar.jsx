@@ -28,12 +28,6 @@ const sidebarItems = [
 ]
 const Sidebar = () => {
     const sideRef = useRef(null)
-    // const handleActive = ()=>{
-    //     console.log(sideRef.current.className)
-    //     if(sideRef.current){
-    //         sideRef.current.className = "active"
-    //     }
-    // }
     return (
         <div className='flex-[1] px-[20px] pt-[30px] border-r-borderColor border-r-[1px]'>
             <Link to="/" className='flex items-center mb-[48px] justify-center w-[40px] h-[40px] border-borderColor border-[1px] rounded-lg'>
@@ -49,7 +43,6 @@ const Sidebar = () => {
                         </NavLink>
                     ))
                 }
-
             </div>
         </div>
     )
