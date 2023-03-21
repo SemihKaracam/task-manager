@@ -36,7 +36,6 @@ const Sidebar = () => {
             <div className='sidebarItems'>
                 {
                     sidebarItems.map((item) => (
-                        // <NavLink className={sideRef.current && "active"} to={item.path} ref={sideRef}>
                         <NavLink className="flex mb-4 items-center p-[12px] rounded-lg gap-4 opacity-60" to={item.path}>
                             {item.icon}
                             <span className='text-sm'>{item.title}</span>
