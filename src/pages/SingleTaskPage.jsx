@@ -10,9 +10,9 @@ const SingleTaskPage = () => {
   const [isLoading,setIsLoading] = useState(false)
   const handleCompleteTask = async(e)=>{
     e.preventDefault()
-    setCompleted(!completed)
     setIsLoading(true)
     await completeTask(task.id)
+    setCompleted(!completed)
     setIsLoading(false)
   }
 
