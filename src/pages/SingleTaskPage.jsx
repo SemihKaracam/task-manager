@@ -21,7 +21,7 @@ const SingleTaskPage = () => {
       <Link to={`/tasks/edit/${task.id}`}>
         <Button bgColor="bg-[#415562]" text="Edit" />
       </Link>
-      <button onClick={handleCompleteTask} className={`${completed ? 'bg-greenBg' : 'bg-redBg'} flex items-center gap-2 text-[12px] font-bold px-3 py-2 rounded-sm`}>
+      <button onClick={handleCompleteTask} disabled={isLoading} className={`${completed ? 'bg-greenBg' : 'bg-redBg'} flex items-center gap-2 text-[12px] font-bold px-3 py-2 rounded-sm`}>
         {completed ? "Completed" : "Not Completed"}
         {isLoading && <Loading/>}
       </button>
