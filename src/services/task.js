@@ -1,4 +1,4 @@
-export const waitFor = async (data, ms = 500) =>
+export const waitFor = async (data, ms = 1000) =>
   new Promise((resolve) => {
     setTimeout(() => {
       resolve(data);
