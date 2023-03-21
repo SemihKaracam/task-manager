@@ -15,7 +15,6 @@ const CreateTaskPage = () => {
 }
 
 export const createTaskPageSubmitAction = async({request}) => {
-  throw new Error("Error")
   const formData = await request.formData()
   const id = Date.now()
   const name = formData.get("task-name")
