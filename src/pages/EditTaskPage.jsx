@@ -5,20 +5,6 @@ import { getTask, updateTask } from '../services/task'
 
 const EditTaskPage = () => {
   const task = useLoaderData()
-  console.log(task)
-  // const navigate = useNavigate()
-  // const { pathname } = useLocation()
-  // const id = pathname.split("/")[3]
- 
-  // const task = JSON.parse(localStorage.getItem("tasks")).find((item) => item.id == id)
-  
-  // const [name,setName] = useState(task.name)
-  // const [description,setDescription] = useState(task.description)
-  // const [completed,setCompleted] = useState(task.completed)
-  // const handleUpdateTask = () => {
-  //   updateTask({id:id,name:name,description:description,completed:completed})
-  //   navigate("/tasks/"+id.toString())
-  // }
   return (
     <Form className='p-4 [&>*]:mb-2' method='PUT'>
       <Link to={`/tasks/${task.id}`}>
