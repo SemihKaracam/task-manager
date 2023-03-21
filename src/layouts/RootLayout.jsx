@@ -5,7 +5,6 @@ import Sidebar from '../components/Sidebar'
 
 const RootLayout = () => {
   const navigation = useNavigation()
-  console.log(navigation)
   return (
     <div className='flex h-[100%] text-white'>
         <Sidebar/>
